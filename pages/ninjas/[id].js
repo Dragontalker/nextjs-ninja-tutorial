@@ -28,10 +28,10 @@ export const getStaticPaths = async () => {
   const Details = ({ ninja }) => {
     return (
       <div>
-        <h1>{ ninja.name }</h1>
-        <p>{ ninja.email }</p>
-        <p>{ ninja.website }</p>
-        <p>{ ninja.address.city }</p>
+        <h1>Ninja's Name { ninja.name }</h1>
+        <p>E-mail: { ninja.email }</p>
+        <p>Personal Website: { ninja.website }</p>
+        <p>Location: { ninja.address.city }</p>
       </div>
     );
   }
